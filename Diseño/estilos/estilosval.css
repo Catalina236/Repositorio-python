@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@600&family=DM+Sans:opsz,wght@9..40,700&family=Moo+Lah+Lah&family=Mulish:wght@800&family=Poppins:wght@300&family=Quicksand:wght@700&family=Raleway:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=REM:wght@100;700;900&family=Ysabeau+Infant:wght@900&display=swap');
+
+header{
+    background-color: palevioletred;
+    height: 90px;
+    position: relative;
+}
+.Titulo{
+    font-weight: bold;
+    font-family: 'Moo Lah Lah', cursive;
+    position: relative;
+    top: -7px;
+    left: 85px;
+    font-size: 39px;
+    font-family: 'Ysabeau Infant', sans-serif;
+}
+footer{
+    background-color: palevioletred;
+    height: 80px;
+    position: relative;
+    bottom: -300px;
+}
+ul li{
+    display: inline-block;
+}
+ul a{
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+    font-family: 'Cabin', sans-serif;
+    font-size: 20px;
+    position: relative;
+    top: 25px;
+    left: 65px;
+    padding: 10px 16px;
+    transition: 0.2s ease;
+    opacity: 0.8;
+    /*background-color: pink;*/
+}
+ul li a:hover{
+    text-decoration: underline;
+    color: white;
+}
+.terminos:hover{
+    text-decoration: underline;
+    color: rgb(0, 128, 255);
+}
