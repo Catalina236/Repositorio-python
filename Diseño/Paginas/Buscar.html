@@ -12,21 +12,49 @@
         <img src="" alt="">
         <h1 class="Titulo">Buscar</h1>
     </header>
-    <div class="contenido-busqueda"></div>
-    <form action="" class="form-busqueda"><input class="busqueda" type="text">
-        <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
-            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
-          </svg>
-        <select name="" id="">
-            <option value="">Seleccione una categoría</option>
-            <option value="">Todos</option>
-            <option value="">Instrumentos</option>
-            <option value="">Compras</option>
-            <option value="">Teoría</option>
-            <option value="">Canciones</option>
-        </select>
-        <button class="Boton-busqueda">Buscar</button>
-    </form>
+    <div class="form-busqueda" id="form-busqueda">
+        <form action="" class="form-busqueda" id="form-busqueda">
+            <input class="busqueda" type="text" id="casbusq">
+            <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+              </svg>
+              <section>
+                <ul id="listaArticulos">
+                <li class="articulo">Guitarra</li>
+                <li class="articulo">Batería</li>
+                <li class="articulo">Bajo</li>
+                <li class="articulo">Triángulo</li>
+                <li class="articulo">Armónica</li>
+                <li class="articulo">Violín</li>
+                <li class="articulo">Piano</li>
+                <li class="articulo">Teclado</li>
+            </ul>
+        </section>
+            <button type="button" class="Boton-busqueda" id="Boton-busqueda">Buscar</button>
+        </form>
+    </div>
+    <script>
+        document.addEventListener("keyup", e=>{
+
+        if (e.target.matches("#casbusq")){
+
+            if (e.key ==="Escape")e.target.value = ""
+
+            document.querySelectorAll(".articulo").forEach(Instrumento =>{
+
+                Instrumento.textContent.toLowerCase().includes(e.target.value.toLowerCase())
+                ?Instrumento.classList.remove("filtro")
+                :Instrumento.classList.add("filtro")
+            }
+            )
+        }
+
+        })
+        if (e.target.doesntmatches("#casqbus")){
+                innerHTML='<p>No se encontraron resultados</p>';
+        }
+      </script>
+
     <footer>
         <ul>
             <li><a href="../index.html">Inicio</a></li>
