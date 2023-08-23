@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    background-color:ghostwhite;
+}
+h1{
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
+    position: relative;
+    bottom: 82px;
+}
+h2{
+    font-family: 'Nunito',sans-serif;
+}
+.logo{
+    margin-left: 23px;
+    margin-top: 33px;
+}
+.logo:hover{
+    transform: scale(1.5);
+}
+nav{
+    max-width: 100%;
+    margin: auto;
+    background-color: green;
+    font-size: 20px;
+    margin-top: 5px;
+    font-family: 'Nunito', sans-serif;
+}
+.menu-principal{
+    list-style: none;
+    display: flex;
+    justify-content:space-around;
+}
+.menu-principal >li>a{
+    display: block;
+    padding: 15px 10px;
+    color: white;
+    text-decoration: none;
+}
+.menu-principal>li:hover{
+    background-color: black;
+}
+.submenu{
+    position: absolute;
+    display: none;
+    list-style: none;
+    width: 200px;
+    background-color: rgba(0, 0, 0, .5);
+}
+.menu-principal li:hover .submenu{
+    display: block;
+}
+.submenu li:hover{
+    background-color: black;
+}
+.submenu li a{
+    display: block;
+    color: white;
+    text-decoration:none ;
+    padding: 15px 15px 15px 20px;   |
+}
+#html{
+	margin: auto;
+	padding: 20px;
+	max-width: 900px;
+	background: white;
+}
+.contenido{
+    display: table;
+    padding: 10px;
+    column-gap: 30px;
+    font-family: 'Nunito', sans-serif;
+}
+.articulo{
+    display: table-cell;
+    width: 920px;
+    column-count: 2;
+    font-size: 22px;
+    padding-right: 22px;
+}
+.contenido h2{
+    color: black;
+    font-size: 30px;
+    position: relative;
+    margin: auto;
+    text-align: center;
+}
+.articulo p{
+    color: black;
+    margin-top: 10px;
+    padding: 30px;
+    font-size:22px;
+    text-align: justify;
+    
+}
+.articulo li{
+    color: black;
+    padding: 10px;
+    padding-right:5px ;
+}
+.articulo img{
+    border-radius:50px ;
+    padding: 30px;
+}
+.nota a{
+    text-decoration: none;
+}
+.nota a:hover{
+    background-color: black;
+    text-decoration: none;
+}
+#comentarios{
+    font-size: 22px;
+}
+.contenido a{
+    color: black;
+}
+a:hover{
+    font-weight: bold;
+}
+.parrafo{
+    width: 100%;
+}
+.texto{
+    font-size: 22px;
+    font-family: 'Nunito', sans-serif;
+    margin: -120px 45% 1px 20%;
+    position: relative;
+    bottom: 289px;
+    left: 200px;
+}
+.baner{
+    width: 56%;
+    margin: 32px 20%;
+    height: 478px;
+    vertical-align: text-top;
+    border-radius: 22px;
+}
+.titulo{
+    margin-bottom: 12px;
+}
+.contenedor{
+    margin-left: 550px;
+}
