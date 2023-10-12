@@ -1,4 +1,4 @@
-personas={"123456789":["Brandon","Rodríguez"],"123987564":["Ana María","Fernández"]}
+personas={"123456789":["Mayra","Calderón"],"123987564":["Ana María","Fernández"]}
 búsqueda=input("Ingrese el valor que desea buscar: ")
 encontrado=False
 for key,value in personas.items():
